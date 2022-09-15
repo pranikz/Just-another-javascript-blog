@@ -29,14 +29,17 @@ The standards for JavaScript are the ECMAScript Language Specification (ECMA-262
 Do not confuse JavaScript with the Java programming language. Both "Java" and "JavaScript" are trademarks or registered trademarks of Oracle in the U.S. and other countries. However, the two programming languages have very different syntax, semantics, and use.
 
 # Expression Vs Statements
-- Statements "do things". *A programme is asequence of statements*
+
+- Statements "do things". _A programme is asequence of statements_
+
 ```js
 var x;
 ```
+
 - Expression Produce values
 
 ```js
-3 * 6 // 18
+3 * 6; // 18
 ```
 
 We can see a classic example by having a look into a if else block
@@ -48,59 +51,120 @@ if (y >= 0) {
 } else {
   x = -y;
 }
-
 ```
 
-can also be written as 
+can also be written as
 
 ```js
-var x = y >= 0 ? y : -y
+var x = y >= 0 ? y : -y;
 ```
 
-## Let's have a look where javascript behaves wierdly 
+## Let's have a look where javascript behaves wierdly
 
 1. Lets have a look on this example
 
 ```js
-function sum (a, b){
-  return
-  a + b
+function sum(a, b) {
+  return;
+  a + b;
 }
 ```
+
 expected output
 
-```sum (4,5)```  is ```9``` 
+`sum (4,5)` is `9` \
 
-but it returns ```undefined``` 
-Reason: ```return``` is a statements which returns nothing and once ```return``` statement is done ```a + b``` will be added but wont be returned so it returns ```undefined```.
+but it returns `undefined` \
+Reason: `return` is a statements which returns nothing and once `return` statement is done `a + b` will be added but wont be returned so it returns `undefined`.
 
 2. Lets have a look on another example
 
 ```js
 function sum(a, b) {
-  return 
+  return;
   {
-    sum: a + b
+    sum: a + b;
   }
 }
 ```
-```sum (4,5)```  is ```9``` 
 
-but it returns ```undefined``` 
-Reason: ```return``` is a statements which returns nothing and once ```return``` statement is done ```a + b``` will be added but wont be returned so it returns ```undefined```.
+`sum (4,5)` is `9`\
+
+but it returns `undefined` \
+Reason: `return` is a statements which returns nothing and once `return` statement is done `a + b` will be added but wont be returned so it returns `undefined`.
 
 # Semicolons!
 
 - Semicolons are optional but It is recommended to have a pracice of adding semicolons.
 - Semicolons terminate statements not blocks.
 - Semicolon is Required in function expression (as shown in example)
+
 ```js
-const getRectArea = function(width, height) {
+const getRectArea = function (width, height) {
   return width * height;
 };
 ```
+
 - Be careful with return statements. If you return something, add it on the same line as the return (same for break, throw, continue)
 - Never start a line with parentheses, as those might be concatenated with the previous line to form a function call, or an array element reference
- [lvvdxjl9hgmgc0y1h4ts](https://user-images.githubusercontent.com/44764138/190505941-2301336e-039d-4b81-8e07-3170ce4f2eaa.jpg)
- 
- 
+  [lvvdxjl9hgmgc0y1h4ts](../public/images/kcusc.jpg)
+
+# Variables and Assignment
+
+Variables are containers for storing data (storing data values).
+4 Ways to Declare a JavaScript Variable:
+
+1. Using `var`
+2. Using `let`
+3. Using `const`
+4. Using nothing
+
+- In this example, `x` , `y` are variables, declared with the `var` , `let`, keyword and `z` is undeclared:
+
+```js
+var x = 5;
+let y = 6;
+z = x + y;
+```
+
+## When to Use JavaScript var?
+
+- Always declare JavaScript variables with `var`, `let` , or `const`.
+
+- The `var` keyword is used in all JavaScript code from 1995 to 2015.
+
+- The `let` and `const` keywords were added to JavaScript in 2015.
+
+- If you want your code to run in older browser, you must use `var`.
+
+## When to Use JavaScript const?
+
+- If you want a general rule: always declare variables with `const`.
+
+- If you think the value of the variable can change, use `let`.
+
+- In this example, `price1`, `price2`, and `total`, are variables:
+
+```js
+const price1 = 5;
+const price2 = 6;
+let total = price1 + price2;
+```
+- The two variables `price1` and `price2` are declared with the `const` keyword.
+
+- These are constant values and cannot be changed.
+
+- The variable `total` is declared with the let keyword. This is a value that can be changed.
+
+## JavaScript Identifiers
+- All JavaScript variables must be identified with unique names.These unique names are called identifiers.
+
+- Identifiers can be short names (like x and y) or more descriptive names (age, sum, totalVolume).
+
+- The general rules for constructing names for variables (unique identifiers) are:
+
+>> 1. Names can contain letters, digits, underscores, and dollar signs.
+>> 2. Names must begin with a letter
+>> 3. Names can also begin with $ and _ (but we will not use it in this tutorial)
+>> 4. Names are case sensitive (y and Y are different variables)
+>> 5. Reserved words (like JavaScript keywords) cannot be used as names
