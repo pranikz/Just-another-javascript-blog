@@ -42,16 +42,17 @@ Do not confuse JavaScript with the Java programming language. Both "Java" and "J
 We can see a classic example by having a look into a if else block
 
 ```js
-     var x;
-     if( y >= 0) {
-         x = y;
-       } else {
-         x = -y;
-       }
+var x;
+if (y >= 0) {
+  x = y;
+} else {
+  x = -y;
+}
+
 ```
 
 can also be written as 
 
 ```js
-     var x = y >= 0 ? y : -y
+var x = y >= 0 ? y : -y
 ```
