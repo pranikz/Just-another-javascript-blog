@@ -107,7 +107,8 @@ const getRectArea = function (width, height) {
 
 - Be careful with return statements. If you return something, add it on the same line as the return (same for break, throw, continue)
 - Never start a line with parentheses, as those might be concatenated with the previous line to form a function call, or an array element reference
-  [lvvdxjl9hgmgc0y1h4ts](../public/images/kcusc.jpg)
+  ![lvvdxjl9hgmgc0y1h4ts](../public/images/kcusc.jpg)
+  ![Stormtroopocat](https://octodex.github.com/images/stormtroopocat.jpg "The Stormtroopocat")
 
 # Variables and Assignment
 
@@ -150,6 +151,7 @@ const price1 = 5;
 const price2 = 6;
 let total = price1 + price2;
 ```
+
 - The two variables `price1` and `price2` are declared with the `const` keyword.
 
 - These are constant values and cannot be changed.
@@ -157,14 +159,15 @@ let total = price1 + price2;
 - The variable `total` is declared with the let keyword. This is a value that can be changed.
 
 ## JavaScript Identifiers
+
 - All JavaScript variables must be identified with unique names.These unique names are called identifiers.
 
 - Identifiers can be short names (like x and y) or more descriptive names (age, sum, totalVolume).
 
 - The general rules for constructing names for variables (unique identifiers) are:
 
->> 1. Names can contain letters, digits, underscores, and dollar signs.
->> 2. Names must begin with a letter
->> 3. Names can also begin with $ and _ (but we will not use it in this tutorial)
->> 4. Names are case sensitive (y and Y are different variables)
->> 5. Reserved words (like JavaScript keywords) cannot be used as names
+> > 1.  Names can contain letters, digits, underscores, and dollar signs.
+> > 2.  Names must begin with a letter
+> > 3.  Names can also begin with $ and \_ (but we will not use it in this tutorial)
+> > 4.  Names are case sensitive (y and Y are different variables)
+> > 5.  Reserved words (like JavaScript keywords) cannot be used as names
