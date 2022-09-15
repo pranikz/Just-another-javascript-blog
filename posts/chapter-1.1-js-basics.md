@@ -31,12 +31,12 @@ Do not confuse JavaScript with the Java programming language. Both "Java" and "J
 # Expression Vs Statements
 - Statements "do things". *A programme is asequence of statements*
 ```js
-      var x;
+var x;
 ```
 - Expression Produce values
 
 ```js
-      3 * 6 // 18
+3 * 6 // 18
 ```
 
 We can see a classic example by having a look into a if else block
@@ -56,3 +56,15 @@ can also be written as
 ```js
 var x = y >= 0 ? y : -y
 ```
+
+## Let's have a look where javascript behaves wierdly 
+
+Lets have a look on this example
+```js
+function sun (a, b){
+  return
+  a + b
+}
+```
+expected output
+```sum (4,5)```  is ```9``` 
