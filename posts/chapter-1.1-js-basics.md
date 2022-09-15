@@ -8,7 +8,7 @@ tags:
   - javscript, nextjs
 ---
 
-_We will be covering 4 topics in this module_
+_We will be covering 5 topics in this chapter_
 
 1. Introduction
 2. History of JavaScript
