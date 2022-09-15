@@ -59,12 +59,48 @@ var x = y >= 0 ? y : -y
 
 ## Let's have a look where javascript behaves wierdly 
 
-Lets have a look on this example
+1. Lets have a look on this example
+
 ```js
-function sun (a, b){
+function sum (a, b){
   return
   a + b
 }
 ```
 expected output
+
 ```sum (4,5)```  is ```9``` 
+
+but it returns ```undefined``` 
+Reason: ```return``` is a statements which returns nothing and once ```return``` statement is done ```a + b``` will be added but wont be returned so it returns ```undefined```.
+
+2. Lets have a look on another example
+
+```js
+function sum(a, b) {
+  return 
+  {
+    sum: a + b
+  }
+}
+```
+```sum (4,5)```  is ```9``` 
+
+but it returns ```undefined``` 
+Reason: ```return``` is a statements which returns nothing and once ```return``` statement is done ```a + b``` will be added but wont be returned so it returns ```undefined```.
+
+# Semicolons!
+
+- Semicolons are optional but It is recommended to have a pracice of adding semicolons.
+- Semicolons terminate statements not blocks.
+- Semicolon is Required in function expression (as shown in example)
+```js
+const getRectArea = function(width, height) {
+  return width * height;
+};
+```
+- Be careful with return statements. If you return something, add it on the same line as the return (same for break, throw, continue)
+- Never start a line with parentheses, as those might be concatenated with the previous line to form a function call, or an array element reference
+ [lvvdxjl9hgmgc0y1h4ts](https://user-images.githubusercontent.com/44764138/190505941-2301336e-039d-4b81-8e07-3170ce4f2eaa.jpg)
+ 
+ 
