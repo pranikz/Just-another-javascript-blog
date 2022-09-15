@@ -1,5 +1,5 @@
 ---
-title: "Chapter 1.0  JS Intro to Javascript"
+title: "Chapter 1.0 Intro to Javascript"
 metaTitle: "Intro to javascript "
 metaDesc: "Intro to javascript"
 socialImage: images/Javascript.jpg
