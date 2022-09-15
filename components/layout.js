@@ -34,7 +34,11 @@ export default function Layout({ children }) {
         <div className="container mx-auto flex justify-center text-lg text-black font-bold">
           &copy; 2022&nbsp;
           <span>
-            <a href="https://pranikz.netlify.app" target="_blank">
+            <a
+              href="https://pranikz.netlify.app"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Pranikz
             </a>
           </span>
