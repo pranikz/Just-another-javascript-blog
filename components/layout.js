@@ -21,6 +21,7 @@ export default function Layout({ children }) {
               <a
                 href="https://github.com/pranikz/Just-another-javascript-blog"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 <GitIcon />
               </a>
@@ -39,10 +40,18 @@ export default function Layout({ children }) {
           </span>
         </div>
         <div className="container mx-auto flex justify-center gap-3">
-          <a href="https://www.linkedin.com/in/pranikz/" target="_blank">
+          <a
+            href="https://www.linkedin.com/in/pranikz/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <LinkedinIcon />
           </a>
-          <a href="https://github.com/pranikz/" target="_blank">
+          <a
+            href="https://github.com/pranikz/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <GitIcon />
           </a>
         </div>
