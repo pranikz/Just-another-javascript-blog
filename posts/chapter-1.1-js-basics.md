@@ -107,7 +107,7 @@ const getRectArea = function (width, height) {
 
 - Be careful with return statements. If you return something, add it on the same line as the return (same for break, throw, continue)
 - Never start a line with parentheses, as those might be concatenated with the previous line to form a function call, or an array element reference\
-  ![lvvdxjl9hgmgc0y1h4ts](https://github.com/pranikz/Just-another-javascript-blog/blob/main/public/images/kcusc.jpg)
+  ![Image](https://res.cloudinary.com/practicaldev/image/fetch/s--TKo0VQLF--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://thepracticaldev.s3.amazonaws.com/i/lvvdxjl9hgmgc0y1h4ts.jpg)
 
 
 # Variables and Assignment
