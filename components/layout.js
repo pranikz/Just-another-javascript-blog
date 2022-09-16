@@ -36,34 +36,20 @@ export default function Layout({ children }) {
         {children}
       </main>
       <footer className="bg-[#A6D1E6] mt-8 py-4 text-white flex">
-        <div className="container mx-auto flex justify-center text-lg text-black font-bold">
-          Free and Opensourced with ❤️ by&nbsp;
-          <span className="underline">
+        <div className="container mx-auto flex justify-center text-sm md:text-lg text-black font-bold">
+          made with❤️by&nbsp;
+          
             <a
+            className="underline"
               href="https://pranikz.netlify.app"
               target="_blank"
               rel="noopener noreferrer"
             >
               Pranikz
-            </a>
-          </span>
-        </div>
-        <div className="container mx-auto flex justify-center gap-3">
-          <a
-            href="https://www.linkedin.com/in/pranikz/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <LinkedinIcon />
-          </a>
-          <a
-            href="https://github.com/pranikz/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <GitIcon />
+           
           </a>
         </div>
+        
       </footer>
     </div>
   );

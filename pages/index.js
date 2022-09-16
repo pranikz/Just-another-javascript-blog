@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div className="flex flex-wrap md items-center ">
       <div className=" w-full md:w-1/2 ">
-        <div className="mx-16 md:mx-32">
+        <div className="mx-20 md:mx-32">
           <h1 className="text-4xl md:text-6xl font-bold mt-16">
             Just another <span className="text-[#eab308]">Javascript</span> Blog
           </h1>
@@ -36,7 +36,7 @@ export default function Home() {
 
           <div className="description w-full mt-12  text-gray-900 text-lg ">
             <div>Checkout our maintainers here!!</div>
-            <div className="mx-12 sm:mx-0">
+            <div className="relative mx-11 sm:mx-0">
               <button className=" px-4 py-2 text-black bg-orange-300 border-black shadow-offset-black uppercase mt-5 text-lg font-semibold hover:underline border-2 rounded ">
                 <Link href="/maintainers">maintainers</Link>
               </button>
