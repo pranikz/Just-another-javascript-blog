@@ -29,13 +29,13 @@ export async function getStaticProps({ params: { slug } }) {
 
 export default function PostPage({ frontmatter, content }) {
   return (
-    <div className="prose mx-auto text-white">
+    <div className="prose mx-auto  ">
       <h3>
-        <Link href="/">Back to all blogs</Link>
+        <Link href="/jsblogs">Back to all blogs</Link>
       </h3>
-      <h1 className="text-white">{frontmatter.title}</h1>
+      <h1 className="">{frontmatter.title}</h1>
       <div
-        className="text-white"
+        className=""
         dangerouslySetInnerHTML={{ __html: md().render(content) }}
       />
     </div>

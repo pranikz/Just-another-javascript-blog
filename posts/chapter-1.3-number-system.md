@@ -8,4 +8,11 @@ tags:
   - javscript, nextjs, jsnumbersystem, 
 ---
 
-*Hello chapter 1.3 starts here*
+_We will be covering 2 topics in this chapter_
+
+1. The Values
+2. Number System
+
+# The Values
+
+- Numbers

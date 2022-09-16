@@ -3,16 +3,19 @@ import { LogoIcon, GitIcon, LinkedinIcon } from "./assets/icons";
 
 export default function Layout({ children }) {
   return (
-    <div className="flex flex-col min-h-screen bg-[#554994]">
-      <header className="bg-[#16213E] mb-8 py-4 px-2">
+    <div className="flex flex-col min-h-screen bg-[url('/floating-cogs.svg')] bg-opacity-10">
+      <header className="bg-[#316B83] mb-8 py-4 px-2">
         <div className="container mx-auto flex justify-center">
           <Link href="/">
             <a>
               <LogoIcon />
             </a>
           </Link>
-          <span className="mx-auto text-white text-lg">
-            Just another <span className="text-yellow-500">Javascript</span>{" "}
+          <span className="mx-auto text-white  text-lg">
+            Just another{" "}
+            <span className="text-yellow-500 font-semibold shadow">
+              Javascript
+            </span>{" "}
             Blog
           </span>
 
@@ -29,11 +32,13 @@ export default function Layout({ children }) {
           </div>
         </div>
       </header>
-      <main className="container mx-auto flex-1 ">{children}</main>
-      <footer className="bg-[#E94560] mt-8 py-4 text-white flex">
+      <main className="container mx-auto flex-1  bg-opacity-90 ">
+        {children}
+      </main>
+      <footer className="bg-[#A6D1E6] mt-8 py-4 text-white flex">
         <div className="container mx-auto flex justify-center text-lg text-black font-bold">
-          &copy; 2022&nbsp;
-          <span>
+          Free and Opensourced with ❤️ by&nbsp;
+          <span className="underline">
             <a
               href="https://pranikz.netlify.app"
               target="_blank"
