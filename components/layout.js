@@ -32,7 +32,7 @@ export default function Layout({ children }) {
           </div>
         </div>
       </header>
-      <main className="container mx-auto flex-1  bg-opacity-90 ">
+      <main className="container mx-auto flex-1  ">
         {children}
       </main>
       <footer className="bg-[#A6D1E6] mt-8 py-4 text-white flex">
