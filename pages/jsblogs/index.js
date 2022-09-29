@@ -4,11 +4,14 @@ import Image from "next/image";
 import Link from "next/link";
 
 export async function getStaticProps() {
-  const files = fs.readdirSync("posts");
+  const files = fs.readdirSync("posts/javascriptposts");
 
   const posts = files.map((fileName) => {
     const slug = fileName.replace(".md", "");
-    const readFile = fs.readFileSync(`posts/${fileName}`, "utf-8");
+    const readFile = fs.readFileSync(
+      `posts/javascriptposts/${fileName}`,
+      "utf-8"
+    );
     const { data: frontmatter } = matter(readFile);
     return {
       slug,
