@@ -47,12 +47,12 @@ export default function Layout({ children }) {
       <footer className="bg-[#316B83]  py-4 text-white  ">
         <div className="container  md:flex mx-auto text-sm md:text-lg text-white font-normal md:justify-between text-center  ">
           <div>
-            <span class="text-sm sm:text-center  ">
+            <span className="text-sm sm:text-center  ">
               © 2022 All Rights Reserved.
             </span>
           </div>
           <div className="flex">
-            <ul class="flex flex-wrap items-center mx-auto gap-3 text-sm mt-3 sm:mt-0">
+            <ul className="flex flex-wrap items-center mx-auto gap-3 text-sm mt-3 sm:mt-0">
               <li className="hover:underline">
                 <a
                   href="https://github.com/pranikz/Just-another-javascript-blog"
