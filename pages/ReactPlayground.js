@@ -8,7 +8,7 @@ export default function Home() {
           title="W3Schools Free Online Web Tutorials"
         ></iframe>
       </div>
-      <div className="md:hidden mt-10 flex justify-center">Pleas open this in desktop browser</div>
+      <div className="md:hidden mt-10 flex justify-center">Please open this in desktop browser</div>
     </div>
   );
 }
