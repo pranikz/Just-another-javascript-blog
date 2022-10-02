@@ -5,15 +5,19 @@ import { ThemeProvider } from "next-themes";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <Layout>
-      <Head>
-        <title>Javascript Blog by Pratyush</title>
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-      </Head>
-      <ThemeProvider enableSystem={true} attribute="class">
+    <ThemeProvider enableSystem={true} attribute="class">
+      <Layout>
+        <Head>
+          <title>Javascript Blog by Pratyush</title>
+          <meta
+            name="viewport"
+            content="initial-scale=1.0, width=device-width"
+          />
+        </Head>
+
         <Component {...pageProps} />
-      </ThemeProvider>
-    </Layout>
+      </Layout>
+    </ThemeProvider>
   );
 }
 

@@ -75,3 +75,24 @@ export const SunIcon = () => (
     />
   </svg>
 );
+export const BackIcon = () => (
+  <button className="h-12 w-40 no-underlined  py-2 bg-slate-500 dark:bg-slate-200 text-white dark:text-black focus:shadow-none border-black shadow-offset-black mt-5 hover:underline border-2 text-2xl  font-semibold pt-2">
+    <div className="flex space-x-2 mx-2">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        strokeWidth={1.5}
+        stroke="currentColor"
+        className="w-6 h-6"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M9 15L3 9m0 0l6-6M3 9h12a6 6 0 010 12h-3"
+        />
+      </svg>
+      <span> Go back</span>
+    </div>
+  </button>
+);

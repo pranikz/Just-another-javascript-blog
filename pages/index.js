@@ -1,7 +1,6 @@
 import Link from "next/link";
 import Lottie from "react-lottie";
 import animationData from "../public/coding.json";
-import ThemeToggler from "../components/ThemeToggler";
 
 export default function Home() {
   const defaultOptions = {
@@ -13,10 +12,9 @@ export default function Home() {
     },
   };
   return (
-    <div className="flex flex-wrap ">
+    <div className="flex flex-wrap my-2 ">
       <div className=" w-full md:w-1/2 ">
         <div className="mx-20 md:mx-32">
-          <ThemeToggler />
           <h1 className="text-4xl md:text-6xl font-bold mt-16">
             Just another{" "}
             <span className="text-[#eab308] dark:text-[#eab308]">
@@ -28,20 +26,36 @@ export default function Home() {
             Brushup all your javascript skills at one place. No googling around
             all infos required about your interviews at one place.
           </div>
-          <div className="flex flex-col sm:flex-row my-12 font-light text-gray-500 mx-12 sm:mx-0">
+          <div className="flex w-full flex-col sm:flex-row my-12 font-light text-gray-500  sm:mx-0 md:justify-between">
             <div className="pr-4">
-              <button className="px-4 py-2 bg-[#eab308]  border-black shadow-offset-black mt-5 hover:underline border-2 text-2xl text-gray-900 font-semibold pt-2">
+              <button className="w-full md:w-32 py-2 bg-[#eab308] focus:shadow-none  border-black shadow-offset-black mt-5 hover:underline border-2 text-2xl text-gray-900 font-semibold pt-2">
                 <Link href="/jsblogs">Javascript</Link>
               </button>
             </div>
             <div className="pr-4">
-              <button className="px-7 py-2 bg-[#61dafb] border-black shadow-offset-black mt-5 hover:underline border-2 text-2xl text-gray-900 font-semibold pt-2">
+              <button className="w-full md:w-32  py-2 bg-[#61dafb] focus:shadow-none border-black shadow-offset-black mt-5 hover:underline border-2 text-2xl text-gray-900 font-semibold pt-2">
                 <Link href="/reactblogs">ReactJS</Link>
               </button>
             </div>
             <div className="pr-4">
-              <button className="px-12 py-2 bg-orange-300 border-black shadow-offset-black mt-5 hover:underline border-2 text-2xl text-gray-900 font-semibold pt-2">
+              <button className="w-full md:w-32  py-2 bg-[#ff8e3a] focus:shadow-none border-black shadow-offset-black mt-5 hover:underline border-2 text-2xl text-gray-900 font-semibold pt-2">
                 <Link href="/dsablogs">DSA</Link>
+              </button>
+            </div>
+          </div>
+          <span className="text-lg text-gray-500 dark:text-white ">
+            {" "}
+            Want to code your heart out while learning?? Checkout our Playgounds
+          </span>
+          <div className="flex md:justify-evenly md:w-full flex-col md:flex-row justify-center mb-5">
+            <div className="pr-4 md:w-1/2 ">
+              <button className="w-full py-2 bg-[#eab308] focus:shadow-none border-black shadow-offset-black mt-5 hover:underline border-2 text-2xl text-gray-900 font-semibold pt-2">
+                <Link href="/JSplayground">JS Playground</Link>
+              </button>
+            </div>
+            <div className="pr-4 md:w-1/2">
+              <button className=" w-full py-2 bg-[#61dafb] focus:shadow-none border-black shadow-offset-black mt-5 hover:underline border-2 text-2xl text-gray-900 font-semibold pt-2">
+                <Link href="/ReactPlayground">React Playgound</Link>
               </button>
             </div>
           </div>

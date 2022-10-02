@@ -42,7 +42,7 @@ export default function Home({ posts }) {
                 alt={frontmatter.title}
                 src={`/${frontmatter.socialImage}`}
               />
-              <h1 className="p-4 dark:text-white">{frontmatter.title}</h1>
+              <h1 className="p-4 dark:text-white dark:bg-gray-800">{frontmatter.title}</h1>
             </a>
           </Link>
         </div>
