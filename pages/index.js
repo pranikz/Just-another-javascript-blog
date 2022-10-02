@@ -54,8 +54,8 @@ export default function Home() {
               </button>
             </div>
             <div className="pr-4 md:w-1/2">
-              <button className=" w-full py-2 bg-[#61dafb] focus:shadow-none border-black shadow-offset-black mt-5 hover:underline border-2 text-2xl text-gray-900 font-semibold pt-2">
-                <Link href="/ReactPlayground">React Playgound</Link>
+              <button className=" w-full  md:py-2 bg-[#61dafb] focus:shadow-none border-black shadow-offset-black mt-5 hover:underline border-2 text-2xl text-gray-900 font-semibold pt-2">
+                <Link href="/ReactPlayground">⚛️ Playgound</Link>
               </button>
             </div>
           </div>
