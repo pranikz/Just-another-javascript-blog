@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Lottie from "react-lottie";
 import animationData from "../public/coding.json";
+import ThemeToggler from "../components/ThemeToggler";
 
 export default function Home() {
   const defaultOptions = {
@@ -15,10 +16,15 @@ export default function Home() {
     <div className="flex flex-wrap ">
       <div className=" w-full md:w-1/2 ">
         <div className="mx-20 md:mx-32">
+          <ThemeToggler />
           <h1 className="text-4xl md:text-6xl font-bold mt-16">
-            Just another <span className="text-[#eab308]">Javascript</span> Blog
+            Just another{" "}
+            <span className="text-[#eab308] dark:text-[#eab308]">
+              Javascript
+            </span>{" "}
+            Blog
           </h1>
-          <div className="description w-full mt-12  text-gray-500 text-lg">
+          <div className="description w-full mt-12  text-gray-500 dark:text-white text-lg">
             Brushup all your javascript skills at one place. No googling around
             all infos required about your interviews at one place.
           </div>
