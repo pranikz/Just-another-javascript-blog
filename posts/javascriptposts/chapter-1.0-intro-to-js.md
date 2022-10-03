@@ -10,7 +10,7 @@ tags:
 
 _We will be covering 4 topics in this module_
 
-# Chapter 1.1 JS Basics
+<h1>Hello world!</h1>
 
 1. Introduction
 2. History of JavaScript

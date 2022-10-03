@@ -29,13 +29,16 @@ export async function getStaticProps({ params: { slug } }) {
 
 export default function PostPage({ frontmatter, content }) {
   return (
-    <div className="prose mx-auto  ">
+    <div className="prose dark:prose-invert mx-auto dark:text-white  ">
       <h3>
-        <Link href="/jsblogs">Back to all blogs</Link>
+        
+        <Link href="/jsblogs">
+          <span className="dark:text-white border-red-600 dark:border-red-800">Back to all blogs</span>
+        </Link>
       </h3>
-      <h1 className="">{frontmatter.title}</h1>
+      <h1 className="dark:text-white">{frontmatter.title}</h1>
       <div
-        className=""
+        className="dark:text-white"
         dangerouslySetInnerHTML={{ __html: md().render(content) }}
       />
     </div>

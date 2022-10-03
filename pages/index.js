@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Lottie from "react-lottie";
+import Button from "../components/Button";
 import animationData from "../public/coding.json";
 
 export default function Home() {
@@ -12,31 +13,51 @@ export default function Home() {
     },
   };
   return (
-    <div className="flex flex-wrap ">
+    <div className="flex flex-wrap my-2 ">
       <div className=" w-full md:w-1/2 ">
         <div className="mx-20 md:mx-32">
           <h1 className="text-4xl md:text-6xl font-bold mt-16">
-            Just another <span className="text-[#eab308]">Javascript</span> Blog
+            Just another{" "}
+            <span className="text-[#eab308] dark:text-[#eab308]">
+              Javascript
+            </span>{" "}
+            Blog
           </h1>
-          <div className="description w-full mt-12  text-gray-500 text-lg">
+          <div className="description w-full mt-12  text-gray-500 dark:text-white text-lg">
             Brushup all your javascript skills at one place. No googling around
             all infos required about your interviews at one place.
           </div>
-          <div className="flex flex-col sm:flex-row my-12 font-light text-gray-500 mx-12 sm:mx-0">
+          <div className="flex w-full flex-col sm:flex-row my-12 font-light text-gray-500  sm:mx-0 md:justify-between gap-3 md:gap-0">
             <div className="pr-4">
-              <button className="px-4 py-2 bg-[#eab308]  border-black shadow-offset-black mt-5 hover:underline border-2 text-2xl text-gray-900 font-semibold pt-2">
+              <Button className="w-full md:w-32 bg-js-yellow text-2xl h-12 ">
                 <Link href="/jsblogs">Javascript</Link>
-              </button>
+              </Button>
             </div>
             <div className="pr-4">
-              <button className="px-7 py-2 bg-[#61dafb] border-black shadow-offset-black mt-5 hover:underline border-2 text-2xl text-gray-900 font-semibold pt-2">
+              <Button className="w-full md:w-32   bg-react-blue text-2xl h-12 ">
                 <Link href="/reactblogs">ReactJS</Link>
-              </button>
+              </Button>
             </div>
             <div className="pr-4">
-              <button className="px-12 py-2 bg-orange-300 border-black shadow-offset-black mt-5 hover:underline border-2 text-2xl text-gray-900 font-semibold pt-2">
+              <Button className="w-full md:w-32 bg-dsa-orange text-2xl h-12">
                 <Link href="/dsablogs">DSA</Link>
-              </button>
+              </Button>
+            </div>
+          </div>
+          <span className="text-lg text-gray-500 dark:text-white ">
+            {" "}
+            Want to code your heart out while learning?? Checkout our Playgounds
+          </span>
+          <div className="flex md:justify-evenly md:w-full flex-col md:flex-row justify-center my-5 gap-3">
+            <div className="pr-4 md:w-1/2 ">
+              <Button className="w-full px-2 bg-js-yellow text-2xl h-12 ">
+                <Link href="/JSplayground">JS Playground</Link>
+              </Button>
+            </div>
+            <div className="pr-4 md:w-1/2">
+              <Button className=" w-full  px-2 bg-react-blue text-2xl h-12">
+                <Link href="/ReactPlayground">⚛️ Playgound</Link>
+              </Button>
             </div>
           </div>
 

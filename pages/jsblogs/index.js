@@ -32,7 +32,7 @@ export default function Home({ posts }) {
       {posts.map(({ slug, frontmatter }) => (
         <div
           key={slug}
-          className="border-4 border-black  m-2 rounded-xl shadow-offset-black-big overflow-hidden flex flex-col bg-white "
+          className="border-4 border-black  m-2 rounded-xl shadow-offset-black-big overflow-hidden flex flex-col bg-white dark:bg-inherit"
         >
           <Link href={`/post/${slug}`}>
             <a>
@@ -42,7 +42,7 @@ export default function Home({ posts }) {
                 alt={frontmatter.title}
                 src={`/${frontmatter.socialImage}`}
               />
-              <h1 className="p-4">{frontmatter.title}</h1>
+              <h1 className="p-4 dark:text-white dark:bg-gray-800">{frontmatter.title}</h1>
             </a>
           </Link>
         </div>
