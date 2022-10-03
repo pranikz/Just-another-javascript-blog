@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Lottie from "react-lottie";
+import Button from "../components/button";
 import animationData from "../public/coding.json";
 
 export default function Home() {
@@ -26,37 +27,37 @@ export default function Home() {
             Brushup all your javascript skills at one place. No googling around
             all infos required about your interviews at one place.
           </div>
-          <div className="flex w-full flex-col sm:flex-row my-12 font-light text-gray-500  sm:mx-0 md:justify-between">
+          <div className="flex w-full flex-col sm:flex-row my-12 font-light text-gray-500  sm:mx-0 md:justify-between gap-3 md:gap-0">
             <div className="pr-4">
-              <button className="w-full md:w-32 py-2 bg-[#eab308] focus:shadow-none  border-black shadow-offset-black mt-5 hover:underline border-2 text-2xl text-gray-900 font-semibold pt-2">
+              <Button className="w-full md:w-32 bg-js-yellow text-2xl h-12 ">
                 <Link href="/jsblogs">Javascript</Link>
-              </button>
+              </Button>
             </div>
             <div className="pr-4">
-              <button className="w-full md:w-32  py-2 bg-[#61dafb] focus:shadow-none border-black shadow-offset-black mt-5 hover:underline border-2 text-2xl text-gray-900 font-semibold pt-2">
+              <Button className="w-full md:w-32   bg-react-blue text-2xl h-12 ">
                 <Link href="/reactblogs">ReactJS</Link>
-              </button>
+              </Button>
             </div>
             <div className="pr-4">
-              <button className="w-full md:w-32  py-2 bg-[#ff8e3a] focus:shadow-none border-black shadow-offset-black mt-5 hover:underline border-2 text-2xl text-gray-900 font-semibold pt-2">
+              <Button className="w-full md:w-32 bg-dsa-orange text-2xl h-12">
                 <Link href="/dsablogs">DSA</Link>
-              </button>
+              </Button>
             </div>
           </div>
           <span className="text-lg text-gray-500 dark:text-white ">
             {" "}
             Want to code your heart out while learning?? Checkout our Playgounds
           </span>
-          <div className="flex md:justify-evenly md:w-full flex-col md:flex-row justify-center mb-5">
+          <div className="flex md:justify-evenly md:w-full flex-col md:flex-row justify-center my-5 gap-3">
             <div className="pr-4 md:w-1/2 ">
-              <button className="w-full py-2 bg-[#eab308] focus:shadow-none border-black shadow-offset-black mt-5 hover:underline border-2 text-2xl text-gray-900 font-semibold pt-2">
+              <Button className="w-full px-2 bg-js-yellow text-2xl h-12 ">
                 <Link href="/JSplayground">JS Playground</Link>
-              </button>
+              </Button>
             </div>
             <div className="pr-4 md:w-1/2">
-              <button className=" w-full  md:py-2 bg-[#61dafb] focus:shadow-none border-black shadow-offset-black mt-5 hover:underline border-2 text-2xl text-gray-900 font-semibold pt-2">
+              <Button className=" w-full  px-2 bg-react-blue text-2xl h-12">
                 <Link href="/ReactPlayground">⚛️ Playgound</Link>
-              </button>
+              </Button>
             </div>
           </div>
 
