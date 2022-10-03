@@ -66,7 +66,7 @@ export default function Layout({ children }) {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Github
+                  GitHub
                 </a>
               </li>
               <li className="hover:underline">
