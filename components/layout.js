@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { LogoIcon } from "./assets/icons";
 import ThemeToggler from "../components/ThemeToggler";
-import Button from "./button";
+import Button from "./Button";
 
 export default function Layout({ children }) {
   return (
