@@ -1,3 +1,4 @@
+
 module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
@@ -9,6 +10,7 @@ module.exports = {
       boxShadow: {
         "offset-black": "2px 2px black",
         "offset-white": "2px 2px white",
+        "offset-grey": "2px 2px grey",
         "offset-black-big": "6px 6px black",
       },
       colors: {

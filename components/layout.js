@@ -5,8 +5,8 @@ import Button from "./Button";
 
 export default function Layout({ children }) {
   return (
-    <div className="flex flex-col min-h-screen bg-white dark:bg-black bg-opacity-10">
-      <header className="bg-header dark:bg-gray-800 mb-8 py-4 px-2">
+    <div className="flex flex-col min-h-screen bg-white dark:bg-slate-900 bg-opacity-10">
+      <header className="bg-header dark:bg-black mb-8 py-4 px-2">
         <div className="container mx-auto flex justify-between md:justify-evenly">
           <Link href="/">
             <a className="mt-1">
@@ -43,7 +43,7 @@ export default function Layout({ children }) {
                 </span>
               </Button>
             </a>
-            <div className="mt-">
+            <div className="">
               {" "}
               <ThemeToggler />
             </div>
@@ -51,7 +51,7 @@ export default function Layout({ children }) {
         </div>
       </header>
       <main className="container mx-auto flex-1  ">{children}</main>
-      <footer className="bg-header dark:bg-gray-800   py-4 text-white  ">
+      <footer className="bg-header dark:bg-black   py-4 text-white  ">
         <div className="container  md:flex mx-auto text-sm md:text-lg text-white font-normal md:justify-between text-center  ">
           <div>
             <span className="text-sm sm:text-center  ">
