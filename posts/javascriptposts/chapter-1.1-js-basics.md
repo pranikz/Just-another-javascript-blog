@@ -72,7 +72,7 @@ function sum(a, b) {
 
 expected output
 
-`sum (4,5)` is `9` 
+`sum (4,5)` is `9`
 
 but it returns `undefined` \
 Reason: `return` is a statements which returns nothing and once `return` statement is done `a + b` will be added but wont be returned so it returns `undefined`.
@@ -108,7 +108,6 @@ const getRectArea = function (width, height) {
 - Be careful with return statements. If you return something, add it on the same line as the return (same for break, throw, continue)
 - Never start a line with parentheses, as those might be concatenated with the previous line to form a function call, or an array element reference\
   ![Image](https://res.cloudinary.com/practicaldev/image/fetch/s--TKo0VQLF--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://thepracticaldev.s3.amazonaws.com/i/lvvdxjl9hgmgc0y1h4ts.jpg)
-
 
 # Variables and Assignment
 

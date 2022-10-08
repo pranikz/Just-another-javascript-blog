@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Lottie from "react-lottie";
 import Button from "../components/Button";
-import animationData from "../public/coding.json";
+import animationData from "../public/coding_1.json";
 
 export default function Home() {
   const defaultOptions = {

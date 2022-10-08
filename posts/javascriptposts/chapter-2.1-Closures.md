@@ -8,7 +8,7 @@ tags:
   - javscript, nextjs
 ---
 
-_We will be covering 4 topics in this chapter _
+__We will be covering 4 topics in this chapter__
 
 # Chapter 2.1 - Closures
 
@@ -166,7 +166,7 @@ it prints
 4. then after name change whe we execute
 
 ```
-printNameFn2();
+ printNameFn2();
 ```
 
 it prints
@@ -210,7 +210,7 @@ A closure refers to the ability of a function to
 
 ```js
 function a() {
-  var X = 5;
+  var x = 5;
   return function () {
     console.log(x);
   };
@@ -222,3 +222,26 @@ b();
 ```
 
 if we try to execute it what is going to be logged?
+
+The inner function is going to remember its own lexical parent i.e `function ()` will only remember `function a()` so if x is not found inside `function ()` scope it will be found in `function a ()` scope.
+
+for now the value of x is 5 when the programme is executed
+
+but what if we comment out  x=5 inside  `function a ()` scope? lets see.
+
+```js
+function a() {
+  // var x = 5;
+  return function () {
+    console.log(x);
+  };
+}
+
+var x = 10;
+const b = a();
+b();
+```
+
+when x= 5 doesnot exist it will go to the global scope and will assign x= 10 and  now it prints x=10
+
+## 3. Where it is used 
