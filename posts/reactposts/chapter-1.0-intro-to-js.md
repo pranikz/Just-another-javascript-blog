@@ -1,8 +1,8 @@
 ---
-title: "Chapter 1.0 Intro to Javascript"
-metaTitle: "Intro to javascript "
-metaDesc: "Intro to javascript"
-socialImage: images/Javascript.jpg
+title: "Arrays and vectors"
+metaTitle: "Arrays "
+metaDesc: "Array dsa"
+socialImage: images/react.png
 date: "2022-09-14"
 tags:
   - javscript, nextjs
