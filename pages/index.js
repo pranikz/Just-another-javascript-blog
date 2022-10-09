@@ -50,12 +50,12 @@ export default function Home() {
           </span>
           <div className="flex md:justify-evenly md:w-full flex-col md:flex-row justify-center my-5 gap-3">
             <div className="pr-4 md:w-1/2 ">
-              <Button className="w-full px-2 bg-js-yellow text-2xl h-12 ">
+              <Button className="w-full px-2 bg-js-yellow text-xl h-12 ">
                 <Link href="/JSplayground">JS Playground</Link>
               </Button>
             </div>
             <div className="pr-4 md:w-1/2">
-              <Button className=" w-full  px-2 bg-react-blue text-2xl h-12">
+              <Button className=" w-full  px-2 bg-react-blue text-xl h-12">
                 <Link href="/ReactPlayground">⚛️ Playgound</Link>
               </Button>
             </div>
