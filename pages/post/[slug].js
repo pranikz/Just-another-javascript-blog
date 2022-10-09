@@ -55,7 +55,7 @@ export default function PostPage({ frontmatter, content }) {
           </span>
         </Link>
       </div>
-      <div className="prose dark:prose-slate dark:prose-headings:text-js-yellow dark:prose-code:text-slate-200 dark:prose-strong:text-yellow-100 prose-img:flex prose-img:justify-center dark:prose-blockquote:text-gray-200   mx-auto dark:text-white  ">
+      <div className="prose px-2 sm:px-0 dark:prose-slate dark:prose-headings:text-js-yellow dark:prose-code:text-slate-200 dark:prose-strong:text-yellow-100 prose-img:flex prose-img:justify-center dark:prose-blockquote:text-gray-200   mx-auto dark:text-white  ">
         <h1 className="dark:text-white">{frontmatter.title}</h1>
         <div
           className="dark:text-white"
