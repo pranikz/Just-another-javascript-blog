@@ -8,7 +8,7 @@ tags:
   - javscript, nextjs
 ---
 
-__We will be covering 4 topics in this chapter__
+**We will be covering 4 topics in this chapter**
 
 # Chapter 2.1 - Closures
 
@@ -227,7 +227,7 @@ The inner function is going to remember its own lexical parent i.e `function ()`
 
 for now the value of x is 5 when the programme is executed
 
-but what if we comment out  x=5 inside  `function a ()` scope? lets see.
+but what if we comment out x=5 inside `function a ()` scope? lets see.
 
 ```js
 function a() {
@@ -242,6 +242,29 @@ const b = a();
 b();
 ```
 
-when x= 5 doesnot exist it will go to the global scope and will assign x= 10 and  now it prints x=10
+when x= 5 doesnot exist it will go to the global scope and will assign x= 10 and now it prints x=10
 
-## 3. Where it is used 
+## 3. Where it is used
+
+1. **Event Handlers**
+
+   Every function callback you give to an event handler is essentially a closure function. for example:
+
+```js
+let countClicked = 0;
+myButton.addEventListner("click", function handleClick() {
+  countClicked++;
+  console.log(`The button was clicked ${countClicked} times.`);
+});
+```
+
+2. **Callbacks**
+
+if you have a variable that exists outside callback in global scope and you want to perform some operations with that variable inside the callback then you can apply the concept of closures to execute it. for example:
+
+```js
+const message = "Hello, World!";
+setTimeout(function callback() {
+  console.log(message);
+}, 1000); // 1000ms delay
+```

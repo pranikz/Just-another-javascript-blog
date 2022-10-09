@@ -2,7 +2,7 @@
 title: "Arrays and vectors"
 metaTitle: "Arrays "
 metaDesc: "Array dsa"
-socialImage: images/Javascript.jpg
+socialImage: images/array.png
 date: "2022-09-14"
 tags:
   - javscript, nextjs

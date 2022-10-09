@@ -6,9 +6,8 @@ import highlightjs from "markdown-it-highlightjs";
 const markdown = new markdownIt({});
 markdown.use(highlightjs);
 
-
 export async function getStaticPaths() {
-  const files = fs.readdirSync("posts/dsaposts");
+  const files = fs.readdirSync("posts/reactposts");
   const paths = files.map((fileName) => ({
     params: {
       slug: fileName.replace(".md", ""),
@@ -21,7 +20,7 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params: { slug } }) {
-  const fileName = fs.readFileSync(`posts/dsaposts/${slug}.md`, "utf-8");
+  const fileName = fs.readFileSync(`posts/reactposts/${slug}.md`, "utf-8");
   const { data: frontmatter, content } = matter(fileName);
   return {
     props: {
@@ -30,12 +29,11 @@ export async function getStaticProps({ params: { slug } }) {
     },
   };
 }
-
 export default function PostPage({ frontmatter, content }) {
   return (
     <>
-      <div className="prose md:mx-auto dark:text-dsa-orange font-bold mb-10 ">
-        <Link href="/dsablogs">
+      <div className="prose md:mx-auto dark:text-react-blue font-bold mb-10 ">
+        <Link href="/reactblogs">
           <span className="flex items-center gap-1 cursor-pointer">
             {" "}
             <svg
@@ -56,7 +54,7 @@ export default function PostPage({ frontmatter, content }) {
           </span>
         </Link>
       </div>
-      <div className="prose dark:prose-slate dark:prose-headings:text-dsa-orange dark:prose-code:text-slate-200 dark:prose-strong:text-yellow-100 prose-img:flex prose-img:justify-center dark:prose-blockquote:text-gray-200   mx-auto dark:text-white  ">
+      <div className="prose dark:prose-slate dark:prose-headings:text-react-blue dark:prose-code:text-slate-200 dark:prose-strong:text-yellow-100 prose-img:flex prose-img:justify-center dark:prose-blockquote:text-gray-200   mx-auto dark:text-white  ">
         <h1 className="dark:text-white">{frontmatter.title}</h1>
         <div
           className="dark:text-white"

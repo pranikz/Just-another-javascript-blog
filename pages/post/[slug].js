@@ -3,8 +3,8 @@ import matter from "gray-matter";
 import markdownIt from "markdown-it";
 import Link from "next/link";
 import highlightjs from "markdown-it-highlightjs";
-import Button from "../../components/Button";
-const md = markdownIt().use(highlightjs);
+const markdown = new markdownIt({});
+markdown.use(highlightjs);
 
 export async function getStaticPaths() {
   const files = fs.readdirSync("posts/javascriptposts");
@@ -59,7 +59,7 @@ export default function PostPage({ frontmatter, content }) {
         <h1 className="dark:text-white">{frontmatter.title}</h1>
         <div
           className="dark:text-white"
-          dangerouslySetInnerHTML={{ __html: md.render(content) }}
+          dangerouslySetInnerHTML={{ __html: markdown.render(content) }}
         />
       </div>
     </>
