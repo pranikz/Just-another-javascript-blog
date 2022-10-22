@@ -68,7 +68,7 @@ export default function Home({ posts }) {
             key={slug}
             className="border-4 border-black  m-2 rounded-xl shadow-offset-black-big overflow-hidden flex flex-col bg-white dark:bg-inherit"
           >
-            <Link href={`/dsapost/${slug}`}>
+            <Link href={`/post/${slug}`}>
               <a>
                 <Image
                   width={650}

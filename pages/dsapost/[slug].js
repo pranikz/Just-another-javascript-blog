@@ -3,9 +3,19 @@ import matter from "gray-matter";
 import markdownIt from "markdown-it";
 import Link from "next/link";
 import highlightjs from "markdown-it-highlightjs";
+
+import mdcopy from "../../components/functionality/Codecopy";
+
+const options = {
+  buttonClass: "hello",
+  iconStyle: "font-size: 21px; opacity: 0.9; color: white;",
+  buttonStyle:
+    "position: absolute; z-index:20;    width: 25px;     height: 20px; top: 10.5px; right: 6px; cursor: pointer; outline: none;",
+};
+
 const markdown = new markdownIt({});
 markdown.use(highlightjs);
-
+markdown.use(mdcopy, options);
 
 export async function getStaticPaths() {
   const files = fs.readdirSync("posts/dsaposts");
