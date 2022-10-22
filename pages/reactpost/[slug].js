@@ -6,10 +6,11 @@ import highlightjs from "markdown-it-highlightjs";
 import mdcopy from "../../components/functionality/Codecopy";
 
 const options = {
-  buttonClass: "hello",
-  iconStyle: "font-size: 21px; opacity: 0.9; color: white;",
+  iconStyle: "font-size: 21px; opacity: 0.4;",
+  iconClass: "",
   buttonStyle:
-    "position: absolute; z-index:20;    width: 25px;     height: 20px; top: 10.5px; right: 6px; cursor: pointer; outline: none;",
+    "position: absolute; top: 7.5px; right: 6px; cursor: pointer; outline: none;",
+  buttonClass: "",
 };
 
 const markdown = new markdownIt({});
