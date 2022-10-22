@@ -10,9 +10,11 @@
   },
   "dependencies": {
     "@mdi/font": "^7.0.96",
+    "clipboard": "^2.0.11",
     "gray-matter": "^4.0.3",
     "lodash": "^4.17.21",
     "markdown-it": "^12.3.2",
+    "markdown-it-code-copy": "^0.1.1",
     "markdown-it-highlightjs": "^4.0.1",
     "next": "12.0.8",
     "next-mdx-remote": "^4.1.0",

@@ -3,13 +3,13 @@ import matter from "gray-matter";
 import markdownIt from "markdown-it";
 import Link from "next/link";
 import highlightjs from "markdown-it-highlightjs";
-import mdcopy from "../../components/functionality/Codecopy";
+import mdcopy from "markdown-it-code-copy";
 
 const options = {
-  iconStyle: "font-size: 21px; opacity: 0.4;",
-  iconClass: "",
+  iconStyle: "font-size: 21px; opacity: 0.4; color:black;",
   buttonStyle:
-    "position: absolute; top: 7.5px; right: 6px; cursor: pointer; outline: none;",
+    "position: absolute; z-index:20; height:40px; width:30px ; background-color:gray; top: 7.5px; right: 6px; cursor: pointer; outline: none;",
+    iconClass:'mdi mdi-content-copy',
   buttonClass: "",
 };
 

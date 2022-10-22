@@ -9,6 +9,10 @@ function MyApp({ Component, pageProps }) {
       <Layout>
         <Head>
           <title>Javascript Blog by Pratyush</title>
+          <link
+            href="https://cdn.jsdelivr.net/npm/@mdi/font@6.9.96/css/materialdesignicons.min.css"
+            rel="stylesheet"
+          ></link>
           <meta
             name="viewport"
             content="initial-scale=1.0, width=device-width"
