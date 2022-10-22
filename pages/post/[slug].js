@@ -3,8 +3,19 @@ import matter from "gray-matter";
 import markdownIt from "markdown-it";
 import Link from "next/link";
 import highlightjs from "markdown-it-highlightjs";
+import mdcopy from "../../components/functionality/Codecopy";
+
+const options = {
+  iconStyle: "font-size: 21px; opacity: 0.4;",
+  iconClass: "",
+  buttonStyle:
+    "position: absolute; top: 7.5px; right: 6px; cursor: pointer; outline: none;",
+  buttonClass: "",
+};
+
 const markdown = new markdownIt({});
 markdown.use(highlightjs);
+markdown.use(mdcopy, options);
 
 export async function getStaticPaths() {
   const files = fs.readdirSync("posts/javascriptposts");
@@ -64,4 +75,9 @@ export default function PostPage({ frontmatter, content }) {
       </div>
     </>
   );
+}
+for (var i = 0; i < 3; i++) {
+  setTimeout(function log() {
+    console.log(i);
+  }, 1000);
 }
