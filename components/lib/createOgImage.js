@@ -2,7 +2,7 @@ export const createOgImage = ({ title, meta }) =>
   [
     // ACCOUNT PREFIX
     // Add your own Cloudinary account ID.
-    `https://res.cloudinary.com/dg6y2dtpl/image/upload/v1666878541/grain-gradient_co11sj.webp`,
+    `https://res.cloudinary.com/dg6y2dtpl/image/upload`,
     // Composed Image Transformations
     `w_1600,h_836,q_100`,
 
@@ -27,7 +27,7 @@ export const createOgImage = ({ title, meta }) =>
     `fl_layer_apply,w_140,g_north_west,x_100,y_100`,
 
     // BG
-    `grain-gradient.png`,
+    `v1666878541/grain-gradient_co11sj.webp`,
   ].join("/");
 
 // double escape for commas and slashes
