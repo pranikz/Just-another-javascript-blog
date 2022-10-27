@@ -1,8 +1,7 @@
 ---
 title: "Chapter 2.2 Closures examples"
-metaTitle: "Closures "
+metaTitle: "Closures examples "
 metaDesc: "Closures"
-socialImage: images/closures.png
 date: "2022-09-14"
 tags:
   - javscript, nextjs

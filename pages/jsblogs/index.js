@@ -70,12 +70,7 @@ export default function Home({ posts }) {
           >
             <Link href={`/post/${slug}`}>
               <a>
-                <Image
-                  width={650}
-                  height={340}
-                  alt={frontmatter.title}
-                  src={`/${frontmatter.socialImage}`}
-                />
+                <div className="text-4xl font-semibold  bg-js-yellow grid text-gray-900 h-36 content-end py-3 px-1  "><span className=" inline-block align-text-bottom ">{frontmatter.metaTitle}</span></div>
                 <h1 className="p-4 dark:text-white dark:bg-gray-800">
                   {frontmatter.title}
                 </h1>

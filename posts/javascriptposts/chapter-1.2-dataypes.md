@@ -1,8 +1,7 @@
 ---
 title: " Chapter 1.2 JS Datatypes "
-metaTitle: "Datatypes "
+metaTitle: "JS Datatypes "
 metaDesc: "Datatypes"
-socialImage: images/Javascript.jpg
 date: "2022-09-15"
 tags:
   - javscript, nextjs

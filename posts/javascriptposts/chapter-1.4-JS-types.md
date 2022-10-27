@@ -1,8 +1,7 @@
 ---
 title: "Chapter 1.4 JS types "
-metaTitle: "JS Number System"
+metaTitle: "JS types"
 metaDesc: "JS Number System"
-socialImage: images/Javascript.jpg
 date: "2022-09-20"
 tags:
   - javscript, nextjs, jsnumbersystem,

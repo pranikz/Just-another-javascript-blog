@@ -2,7 +2,6 @@
 title: "Chapter 3.0 Dynamic Context"
 metaTitle: "Dynamic Context "
 metaDesc: "Dynamic Context"
-socialImage: images/js/Slide 16_9 - 4DC.png
 date: "2022-09-14"
 tags:
   - javscript, nextjs
