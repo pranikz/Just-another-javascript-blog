@@ -3,8 +3,8 @@ import matter from "gray-matter";
 import markdownIt from "markdown-it";
 import Link from "next/link";
 import highlightjs from "markdown-it-highlightjs";
-
 import mdcopy from "markdown-it-code-copy";
+import Head from "next/head"
 
 const options = {
   iconStyle: "font-size: 21px; opacity: 0.4; color:black;",
