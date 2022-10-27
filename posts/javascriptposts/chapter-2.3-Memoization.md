@@ -1,8 +1,7 @@
 ---
 title: "Chapter 2.3 Memoization"
-metaTitle: "Closures "
+metaTitle: "Memoization "
 metaDesc: "Closures"
-socialImage: images/memoization.png
 date: "2022-09-14"
 tags:
   - javscript, nextjs

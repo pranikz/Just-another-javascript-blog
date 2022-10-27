@@ -1,8 +1,7 @@
 ---
 title: "Chapter 1.1 JS basics "
-metaTitle: "Intro to javascript "
+metaTitle: "JS basics "
 metaDesc: "Intro to javascript"
-socialImage: images/Javascript.jpg
 date: "2022-09-14"
 tags:
   - javscript, nextjs

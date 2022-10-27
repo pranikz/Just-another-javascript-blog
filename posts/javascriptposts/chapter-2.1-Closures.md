@@ -1,8 +1,7 @@
 ---
 title: "Chapter 2.1 Closures basics"
-metaTitle: "Closures "
+metaTitle: "Basics of Closures "
 metaDesc: "Closures"
-socialImage: images/closures.png
 date: "2022-09-14"
 tags:
   - javscript, nextjs

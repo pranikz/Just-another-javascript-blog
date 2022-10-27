@@ -2,7 +2,6 @@
 title: "Chapter 2.0 Closures"
 metaTitle: "Closures "
 metaDesc: "Closures"
-socialImage: images/closures.png
 date: "2022-09-14"
 tags:
   - javscript, nextjs
