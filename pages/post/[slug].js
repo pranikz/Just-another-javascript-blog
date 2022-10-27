@@ -4,12 +4,13 @@ import markdownIt from "markdown-it";
 import Link from "next/link";
 import highlightjs from "markdown-it-highlightjs";
 import mdcopy from "markdown-it-code-copy";
-
+import { createOgImage } from "../../components/lib/createOgImage";
+import Head from "next/head";
 const options = {
   iconStyle: "font-size: 21px; opacity: 0.4; color:black;",
   buttonStyle:
     "position: absolute; z-index:20; height:40px; width:30px ; background-color:gray; top: 7.5px; right: 6px; cursor: pointer; outline: none;",
-    iconClass:'mdi mdi-content-copy',
+  iconClass: "mdi mdi-content-copy",
   buttonClass: "",
 };
 
@@ -42,8 +43,20 @@ export async function getStaticProps({ params: { slug } }) {
 }
 
 export default function PostPage({ frontmatter, content }) {
+  const ogImage = createOgImage({
+    title: frontmatter.metaTitle,
+    meta: ["jsblog.info"],
+  });
+
   return (
     <>
+      <Head>
+        <meta property="og:image" content={ogImage} />
+        <meta property="og:image:width" content="1600" />
+        <meta property="og:image:height" content="836" />
+        <meta property="og:image:alt" content={frontmatter.metaTitle} />
+        <meta name="twitter:card" content="summary_large_image" />
+      </Head>
       <div className="prose md:mx-auto dark:text-js-yellow font-bold mb-10 ">
         <Link href="/jsblogs">
           <span className="flex items-center gap-1 cursor-pointer">
