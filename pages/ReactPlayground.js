@@ -1,4 +1,5 @@
 import Head from "next/head";
+import { createOgImage } from "../components/lib/createOgImage";
 
 export default function Home() {
   const ogImage = createOgImage({
