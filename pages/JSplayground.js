@@ -3,7 +3,7 @@ import { createOgImage } from "../components/lib/createOgImage";
 
 export default function Home() {
   const ogImage = createOgImage({
-    title: "JavaScript playground",
+    title: "Javascript playground",
     meta: ["jsblog.info"],
   });
   return (

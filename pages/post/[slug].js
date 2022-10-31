@@ -86,11 +86,39 @@ export default function PostPage({ frontmatter, content }) {
           dangerouslySetInnerHTML={{ __html: markdown.render(content) }}
         />
       </div>
+      <hr class="my-8 h-px bg-gray-200 border-0 dark:bg-gray-700"></hr>
+      <div className="flex-col justify-center items-center mx-auto prose py-5">
+        <h1 className="mb-4 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl">
+          <span className="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">
+            Like
+          </span>{" "}
+          my blogs ?
+        </h1>
+        <p class="text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">
+          You can give this github repo a ⭐
+          <a
+            href="https://github.com/pranikz/Just-another-javascript-blog"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center font-medium text-blue-600 dark:text-blue-500 hover:underline"
+          >
+            Here
+            <svg
+              aria-hidden="true"
+              class="ml-1 w-5 h-5"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </a>
+        </p>
+      </div>
     </>
   );
-}
-for (var i = 0; i < 3; i++) {
-  setTimeout(function log() {
-    console.log(i);
-  }, 1000);
 }
