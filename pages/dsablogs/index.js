@@ -37,11 +37,11 @@ export default function Home({ posts }) {
   });
   return (
     <>
-    <Head>
-        <meta property="og:image" content={ogImage} />
+      <Head>
+        <meta property="og:image" content={createOgImage} />
         <meta property="og:image:width" content="1600" />
         <meta property="og:image:height" content="836" />
-        <meta property="og:image:alt" content={"DSA Blogs"} />
+        <meta property="og:image:alt" content={"Javascript Blogs"} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <div>
@@ -81,12 +81,11 @@ export default function Home({ posts }) {
             >
               <Link href={`/dsapost/${slug}`}>
                 <a>
-                  <Image
-                    width={650}
-                    height={340}
-                    alt={frontmatter.title}
-                    src={`/${frontmatter.socialImage}`}
-                  />
+                  <div className="text-4xl font-semibold  bg-dsa-orange grid text-gray-900 h-36 content-end py-3 px-1  ">
+                    <span className=" inline-block align-text-bottom ">
+                      {frontmatter.metaTitle}
+                    </span>
+                  </div>
                   <h1 className="p-4 dark:text-white dark:bg-gray-800">
                     {frontmatter.title}
                   </h1>

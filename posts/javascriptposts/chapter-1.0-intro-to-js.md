@@ -9,7 +9,6 @@ tags:
 
 _We will be covering 4 topics in this module_
 
-
 1. Introduction
 2. History of JavaScript
 3. Expression v/s Statement
