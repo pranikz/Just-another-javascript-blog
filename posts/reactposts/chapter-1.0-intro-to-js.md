@@ -1,8 +1,7 @@
 ---
-title: "Arrays and vectors"
-metaTitle: "Arrays "
-metaDesc: "Array dsa"
-socialImage: images/react.png
+title: "Chapter 3.1 This keyword"
+metaTitle: "This "
+metaDesc: "This keyword"
 date: "2022-09-14"
 tags:
   - javscript, nextjs
