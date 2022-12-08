@@ -30,7 +30,7 @@ arguments is a special object available inside a function. It contains values of
 
 The best part about apply is we don’t need to take care of the number of arguments that are passed to the invoking function. Because of its dynamic and versatile nature, you can use it in complicated situations.
 
-let us see an example implementing call
+let us see an example implementing apply
 
 ```js
 var numbers = [5, 6, 2, 3, 7];
