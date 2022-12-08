@@ -3,6 +3,8 @@ title: "Chapter 1.0 Intro to Javascript"
 metaTitle: "Intro to javascript "
 metaDesc: "Intro to javascript"
 date: "2022-09-14"
+author: Pratyush M
+socialImage: pratyush.jpg
 tags:
   - javscript, nextjs
 ---

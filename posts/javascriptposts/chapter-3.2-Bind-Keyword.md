@@ -3,6 +3,8 @@ title: "Chapter 3.1 Bind keyword"
 metaTitle: "Bind"
 metaDesc: "Bind keyword"
 date: "2022-09-14"
+author: Pratyush M
+socialImage: pratyush.jpg
 tags:
   - javscript, nextjs
 ---

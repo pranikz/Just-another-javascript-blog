@@ -3,6 +3,8 @@ title: "Chapter 2.1 Closures basics"
 metaTitle: "Basics of Closures "
 metaDesc: "Closures"
 date: "2022-09-14"
+author: Pratyush M
+socialImage: pratyush.jpg
 tags:
   - javscript, nextjs
 ---

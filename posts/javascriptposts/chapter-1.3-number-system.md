@@ -2,8 +2,9 @@
 title: "Chapter 1.3 JS Number System "
 metaTitle: "JS Number System"
 metaDesc: "JS Number System"
-socialImage: images/Javascript.jpg
 date: "2022-09-16"
+author: Pratyush M
+socialImage: pratyush.jpg
 tags:
   - javscript, nextjs, jsnumbersystem,
 ---

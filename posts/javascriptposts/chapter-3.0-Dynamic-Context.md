@@ -3,6 +3,8 @@ title: "Chapter 3.0 Dynamic Context"
 metaTitle: "Dynamic Context "
 metaDesc: "Dynamic Context"
 date: "2022-09-14"
+author: Pratyush M
+socialImage: pratyush.jpg
 tags:
   - javscript, nextjs
 ---

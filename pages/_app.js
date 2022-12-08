@@ -8,7 +8,7 @@ function MyApp({ Component, pageProps }) {
     <ThemeProvider enableSystem={true} attribute="class">
       <Layout>
         <Head>
-          <title>Javascript Blog by Pratyush</title>
+          <title>The Javascript Blog </title>
           <link
             href="https://cdn.jsdelivr.net/npm/@mdi/font@6.9.96/css/materialdesignicons.min.css"
             rel="stylesheet"

@@ -17,15 +17,6 @@ export const createOgImage = ({ title, meta }) =>
     `l_text:Karla_55:${e(meta)},co_rgb:ffe4e680,c_fit,w_1400`,
     // Positioning
     `fl_layer_apply,g_south_west,x_100,y_100`,
-
-    // PROFILE IMAGE
-    // dynamically fetched from my twitter profile
-    `l_twitter_name:pranikz`,
-    // Transformations
-    `c_thumb,g_face,r_max,w_500,h_500,q_100`,
-    // Positioning
-    `fl_layer_apply,w_190,g_north_west,x_100,y_100`,
-
     // BG
     `v1666878541/grain-gradient_co11sj.webp`,
   ].join("/");
