@@ -3,6 +3,8 @@ title: "Chapter 3.1 This keyword"
 metaTitle: "This "
 metaDesc: "This keyword"
 date: "2022-09-14"
+author: Pratyush M
+socialImage: pratyush.jpg
 tags:
   - javscript, nextjs
 ---

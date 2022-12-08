@@ -3,6 +3,8 @@ title: "Chapter 1.1 JS basics "
 metaTitle: "JS basics "
 metaDesc: "Intro to javascript"
 date: "2022-09-14"
+author: Pratyush M
+socialImage: pratyush.jpg
 tags:
   - javscript, nextjs
 ---

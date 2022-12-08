@@ -3,6 +3,7 @@ title: " Chapter 1.2 JS Datatypes "
 metaTitle: "JS Datatypes "
 metaDesc: "Datatypes"
 date: "2022-09-15"
+author: Pratyush M
 tags:
   - javscript, nextjs
 ---

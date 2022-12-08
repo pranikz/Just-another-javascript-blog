@@ -51,6 +51,7 @@ export default function PostPage({ frontmatter, content }) {
   return (
     <>
       <Head>
+        <title>{frontmatter.metaTitle}</title>
         <meta property="og:image" content={ogImage} />
         <meta property="og:image:width" content="1600" />
         <meta property="og:image:height" content="836" />
@@ -81,6 +82,19 @@ export default function PostPage({ frontmatter, content }) {
       </div>
       <div className="prose px-2 sm:px-0 dark:prose-slate dark:prose-headings:text-js-yellow dark:prose-code:text-slate-200 dark:prose-strong:text-yellow-100 prose-img:flex prose-img:justify-center dark:prose-blockquote:text-gray-200   mx-auto dark:text-white  ">
         <h1 className="dark:text-white">{frontmatter.title}</h1>
+        <div className="flex justify-between items-center h-9">
+          <div className="flex flex-col">
+            <span>{frontmatter.author}</span>
+            <span>{frontmatter.date}</span>
+          </div>
+          <img
+            className="inline-block h-8 w-8 rounded-full ring-2 ring-header dark:ring-white"
+            src={`/${frontmatter.socialImage}`}
+            alt={frontmatter.author}
+          />
+        </div>
+
+        <hr className="my-8 h-px bg-gray-200 border-0 dark:bg-gray-700"></hr>
         <div
           className="dark:text-white"
           dangerouslySetInnerHTML={{ __html: markdown.render(content) }}

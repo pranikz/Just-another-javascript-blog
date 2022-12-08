@@ -3,6 +3,8 @@ title: "Chapter 2.2 Closures examples"
 metaTitle: "Closures examples "
 metaDesc: "Closures"
 date: "2022-09-14"
+author: Pratyush M
+socialImage: pratyush.jpg
 tags:
   - javscript, nextjs
 ---
