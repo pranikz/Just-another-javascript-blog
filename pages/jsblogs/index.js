@@ -31,7 +31,7 @@ export async function getStaticProps() {
 export default function Home({ posts }) {
   const [searchValue, setSearchValue] = useState("");
   const filteredBlogPosts = posts.filter(({ frontmatter }) =>
-    frontmatter.title.toLowerCase().includes(searchValue.toLowerCase())
+    frontmatter.metaTitle.toLowerCase().includes(searchValue.toLowerCase())
   );
   const ogImage = createOgImage({
     title: "Javascript Blogs",
