@@ -8,3 +8,67 @@ socialImage: pratyush.jpg
 tags:
   - javscript, nextjs
 ---
+
+# Objects in Javascript
+
+Everything in JS is an object except the primitives
+
+Anything that is not a primitive value is an Object. That includes arrays, functions, and objects themselves.
+
+An object is a collection of properties.
+
+A property is a named container for a value with some additional attributes.
+
+The name of a property is called a key ; thus, an object can be considered as a collection of key-value pairs.
+
+There are similar concepts in other programming languages,
+e.g., Map, Dictionary, Associative Array, Symbol Table, Hash Table, ...
+
+# Properties in Javascript
+
+- all objects in JavaScript are maps (dictionaries) from
+  strings to values.
+
+- A (key, value) entry in an object is called a property . The key of a property is always a text string (ES5).
+
+```js
+let obj = {};
+obj[1] = 10;
+console.log(obj);
+```
+
+### output
+
+```
+{ '1': 10 }
+//key : value
+```
+
+_3 Kinds of Properties_
+
+- Properties (or named data properties)
+- Accessors (or named accessor properties)
+- Internal properties
+  -> Exist only in the ECMAScript language specification.
+
+# Creation of Objects
+
+1. Literal Notation
+
+```js
+let obj = {};
+//Creating an object using literal notation
+```
+
+```js
+const obj = {
+firstName: ‘Alex’,
+lastName: ‘Martin’, // Using string quotes
+dateOfBirth: '18th October',
+friends: ['Bob', 'Christine'],};
+
+```
+
+- An object property name can be any valid JavaScript string, or anything that can be converted to a string including the empty string.
+- The values can be any value type.
+- The nesting of objects can be arbitrary and cyclic too
