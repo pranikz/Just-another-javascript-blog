@@ -17,6 +17,7 @@
     "markdown-it": "^12.3.2",
     "markdown-it-code-copy": "^0.1.1",
     "markdown-it-highlightjs": "^4.0.1",
+    "markdown-it-iframe": "^1.0.0",
     "next": "12.0.8",
     "next-themes": "^0.2.1",
     "react": "17.0.2",

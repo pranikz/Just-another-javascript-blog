@@ -39,7 +39,7 @@ export default function Home({ posts }) {
   });
   return (
     <>
-    <Head>
+      <Head>
         <meta property="og:image" content={ogImage} />
         <meta property="og:image:width" content="1600" />
         <meta property="og:image:height" content="836" />
