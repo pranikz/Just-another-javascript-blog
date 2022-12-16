@@ -20,8 +20,6 @@ markdown.use(highlightjs);
 markdown.use(mdcopy, options);
 markdown.use(mdiframe, {
   allowfullscreen: true,
-  width: 800,
-  height: 600,
   frameborder: 1, // default: 0
 });
 
@@ -86,7 +84,7 @@ export default function PostPage({ frontmatter, content }) {
           </span>
         </Link>
       </div>
-      <div className="prose px-2 sm:px-0 dark:prose-slate dark:prose-headings:text-js-yellow dark:prose-code:text-slate-200 dark:prose-strong:text-yellow-100 prose-img:flex prose-img:justify-center dark:prose-blockquote:text-gray-200   mx-auto dark:text-white  ">
+      <div className="prose px-2 sm:px-0 dark:prose-slate dark:prose-headings:text-js-yellow dark:prose-code:text-slate-200 dark:prose-strong:text-yellow-100 prose-img:flex prose-img:justify-center dark:prose-blockquote:text-gray-200   mx-auto dark:text-white prose-video:w-10  ">
         <h1 className="dark:text-white">{frontmatter.title}</h1>
         <div className="flex justify-between items-center h-9">
           <div className="flex flex-col">

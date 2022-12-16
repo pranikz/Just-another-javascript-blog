@@ -62,13 +62,85 @@ let obj = {};
 
 ```js
 const obj = {
-firstName: ‘Alex’,
-lastName: ‘Martin’, // Using string quotes
-dateOfBirth: '18th October',
-friends: ['Bob', 'Christine'],};
-
+  firstName: "Alex",
+  lastName: "Martin", // Using string quotes
+  dateOfBirth: "18th October",
+  friends: ["Bob", "Christine"],
+};
 ```
 
 - An object property name can be any valid JavaScript string, or anything that can be converted to a string including the empty string.
 - The values can be any value type.
-- The nesting of objects can be arbitrary and cyclic too
+- The nesting of objects can be arbitrary and cyclic too.
+
+2. Object Constructor
+
+```js
+function Person(first, last, age, eye) {
+  this.firstName = first;
+  this.lastName = last;
+  this.age = age;
+  this.eyeColor = eye;
+}
+```
+
+- This effect of this code and the literal notation is the same.
+- However, it is advised not to use this pattern.
+
+3. Object.create
+
+```js
+const newObj = Object.create(Object.prototype);
+newObj.name = "Pratyush";
+```
+
+- This lets you specify the "prototype" of an object atthe time of definition.
+
+# Function as key values
+
+- In an object, when we have a function as a value to a key, then the function is called a method. This is one of the most important features of objects.
+- The methods have access to the key-value pairs of the object.
+
+- They can specify behavior in an object.
+
+```js
+const objl = {
+  fName: "ALEX",
+  Name: "MARTIN",
+  printFullName() {
+    return this.fName + " " + this.lName;
+  },
+};
+
+objl.printFullName();
+//=> 'ALEX MARTIN'
+```
+
+# Accessing Properties
+
+1.  Dot and Bracket Notation
+    Note: Accessing non-existing properties give “undefined”
+
+```js
+var jane = {
+  name: "Jane",
+  "desc.func": function () {
+    return "Person named " + this.name;
+  },
+};
+console.log(jane.name); // Jane
+console.log(jane["desc.func"]); // function
+console.log(jane.abcd); // undefined
+```
+
+### Output
+
+```
+"Jane"
+function() {
+  return "Person named " + this.name;
+}
+undefined
+```
+
+# Adding / Updating Properties

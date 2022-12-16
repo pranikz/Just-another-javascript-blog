@@ -16,5 +16,6 @@ tags:
 - Debouncing will bunch a series of sequential calls to a function into a single call to that function. It ensures that one notification is made for an event that fires multiple times.
 
 Let’s have a look at the code.
+[![Edit this sandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/fancy-snowflake-dnumnt?autoresize=1&fontsize=14&hidenavigation=1&theme=dark&view=editor)
 
-/i/https://codesandbox.io/embed/fancy-snowflake-dnumnt?fontsize=14&hidenavigation=1&module=%2Fscript.js&theme=dark
+/i/https://codesandbox.io/embed/fancy-snowflake-dnumnt?autoresize=1&fontsize=14&hidenavigation=1&theme=dark&view=editor
