@@ -37,7 +37,9 @@ _We will be covering 3 topics in this module_
 
 # Chapter 3.6 - Contextual Formats
 
-1. What is Strict Mode?
-2. Let’s code
+1. New binding
+2. Contextual Formats
 
 # Chapter 3.7 - Dynamic Context
+
+1. debounce and Throttle

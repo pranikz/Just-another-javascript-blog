@@ -5,6 +5,7 @@ import Link from "next/link";
 import highlightjs from "markdown-it-highlightjs";
 import mdcopy from "markdown-it-code-copy";
 import { createOgImage } from "../../components/lib/createOgImage";
+import mdiframe from "markdown-it-iframe";
 import Head from "next/head";
 const options = {
   iconStyle: "font-size: 21px; opacity: 0.4; color:black;",
@@ -17,6 +18,10 @@ const options = {
 const markdown = new markdownIt({});
 markdown.use(highlightjs);
 markdown.use(mdcopy, options);
+markdown.use(mdiframe, {
+  allowfullscreen: true,
+  frameborder: 1, // default: 0
+});
 
 export async function getStaticPaths() {
   const files = fs.readdirSync("posts/javascriptposts");
@@ -61,7 +66,6 @@ export default function PostPage({ frontmatter, content }) {
       <div className="prose md:mx-auto dark:text-js-yellow font-bold mb-10 ">
         <Link href="/jsblogs">
           <span className="flex items-center gap-1 cursor-pointer">
-            {" "}
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -80,7 +84,7 @@ export default function PostPage({ frontmatter, content }) {
           </span>
         </Link>
       </div>
-      <div className="prose px-2 sm:px-0 dark:prose-slate dark:prose-headings:text-js-yellow dark:prose-code:text-slate-200 dark:prose-strong:text-yellow-100 prose-img:flex prose-img:justify-center dark:prose-blockquote:text-gray-200   mx-auto dark:text-white  ">
+      <div className="prose px-2 sm:px-0 dark:prose-slate dark:prose-headings:text-js-yellow dark:prose-code:text-slate-200 dark:prose-strong:text-yellow-100 prose-img:flex prose-img:justify-center dark:prose-blockquote:text-gray-200   mx-auto dark:text-white prose-video:w-10  ">
         <h1 className="dark:text-white">{frontmatter.title}</h1>
         <div className="flex justify-between items-center h-9">
           <div className="flex flex-col">

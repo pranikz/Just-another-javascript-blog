@@ -1,4 +1,9 @@
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
-@import 'code';
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+@import "code";
+@layer utilities {
+  .prose :where(iframe):not(:where([class~="not-prose"] *)) {
+    @apply w-full h-[400px] rounded-lg border-2 shadow-offset-white;
+  }
+}
