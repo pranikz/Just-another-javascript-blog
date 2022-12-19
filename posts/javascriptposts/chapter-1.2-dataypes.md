@@ -4,6 +4,7 @@ metaTitle: "JS Datatypes "
 metaDesc: "Datatypes"
 date: "2022-09-15"
 author: Pratyush M
+socialImage: pratyush.jpg
 tags:
   - javscript, nextjs
 ---
